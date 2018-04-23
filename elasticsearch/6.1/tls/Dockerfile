@@ -15,5 +15,6 @@ RUN chown elasticsearch:elasticsearch config/elasticsearch.yml
 
 USER elasticsearch
 
+RUN bin/elasticsearch-plugin install io.fabric8:elasticsearch-cloud-kubernetes:6.1.1
 RUN bin/elasticsearch-plugin install -b com.floragunn:search-guard-ssl:6.1.1-25.0
 
