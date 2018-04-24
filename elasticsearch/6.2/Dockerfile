@@ -15,4 +15,4 @@ RUN chown elasticsearch:elasticsearch config/elasticsearch.yml
 
 USER elasticsearch
 
-RUN bin/elasticsearch-plugin install io.fabric8:elasticsearch-cloud-kubernetes:6.2.3.1
+RUN bin/elasticsearch-plugin install -b io.fabric8:elasticsearch-cloud-kubernetes:6.2.3.1
